@@ -1,0 +1,21 @@
+HTTP - stands for Hypertext Transfer protocol. which allows for browsers and servers to communicate on the standard World Wide Web via a request/response system. 
+URL - stands for Uniform Resource Locator. The address of a webpage used to locate a resource on the internet. consists of a protocol, hostname, port, resource, query
+DNS - stands for Domain Name System. it turns domain names into IP addresses, allows browsers to get to websites 
+Query String - optional part of a URL which gives more info from forms or search terms/arguments in parameters. helps find what you specifically are searching / allows to pass key value pairs into URL in the format ?key1=value&key2=value2
+Two HTTP verbs - GET method, requests without side effects/ doesent change data on server. ex to simply pull up a webpage like google, click a link, or some form of submission. POST method, requests with side effects/ changes data on the server. ex sending mail, charging a credit card. 
+HTTP request - a GET request to access a resource on the server with componenets from a URL. the request contains headers/info  
+HTTP response - a response to the request containing headers with info HTML. contains status code 
+HTTP header - is a field of either a request or response that passes context/metadata about the request or response. like to show the preferred formats, languages, location of response, name, version, media type etc.
+Process of when typing a URL into a browser - browser sets up connection with server by asking for IP address and being established via DNS, then the HTTP request is sent to that IP address, server looks up required resource and responds using the HTTP protocol, the data is sent to your browser, browser then parses html for you to view. 
+
+
+
+PRACTICE TOOLS 
+
+1. Using curl make a GET request to the icanhazdadjoke.com API to find all jokes involving the word "pirate" - 
+on terminal : curl -H "Accept: application/json" "https://icanhazdadjoke.com/search?term=pirate"
+
+2. Use dig to find what the IP address is for icanhazdadjoke.com - 
+on terminal : dig icanhazdadjoke.com
+
+
